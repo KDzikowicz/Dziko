@@ -114,6 +114,7 @@ h2{
 .kontakt{
     display: flex;
     flex-direction: row;
+    background-color: #000000;
 }
 form{
     display: flex;
@@ -123,9 +124,15 @@ form{
     padding-left: 10px;
     margin-right: 10px;
 }
+.kontakt-info ul{
+    list-style: none;
+}
 .kontakt-dane{
     padding-right: 10px;
     margin-left: 10px;
+}
+.kontakt-dane button{
+    margin-top: 10px;
 }
 .Duźe{
     color: yellow;
