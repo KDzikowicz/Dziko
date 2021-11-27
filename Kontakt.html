@@ -35,7 +35,20 @@
         <main>
             <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
         <div class="content">
+            <article>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo labore explicabo, velit voluptates alias adipisci asperiores mollitia veniam sequi eius delectus numquam dolorum perspiciatis fugiat recusandae tempora ea consectetur.</p>
+                <div>
+                    <form action="insert.php" method=POST class=contact>
+                    <label for="name">Imię</label>
+                    <input type="text" id="name" name="name">
+                    <label for="surname">Nazwisko</label>
+                    <input type="text" id="surname" name="surname">
+                    <label for="message">Wiadomość</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="button" name="submit">Wyślij</button>
+                </form>
+                </div>
+            </article>
             <div class="images">
                 <img src="Tratwa DzikoTratwaDziko.svg" alt="">
             </div>

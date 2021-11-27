@@ -82,7 +82,7 @@ main h1{
     height: 85vh;
     width: 84.8vw;
 }
-.content p{
+.content article{
     margin: 0;
     color:white;
     width: 40.8vw;
@@ -100,4 +100,8 @@ main h1{
 img{
     width: 40vw;
     height: 85vh;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
 }
