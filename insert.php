@@ -3,11 +3,11 @@ include "db_connection.php";
  
 if(isset($_POST['submit']))
 {
- $name = $_POST['Imie'];
- $email = $_POST['E-mail'];
- $message = $_POST['Tekst'];
+ $name = $_POST['name'];
+ $surname = $_POST['surname'];
+ $message = $_POST['message'];
  
- $insert = mysqli_querry($db, "INSERT INTO `kontakt`(`name`, `surname`, `message`) VALUES ('$name', '$email', '$message')");
+ $insert = mysqli_querry($db, "INSERT INTO `kontakt`(`name`, `surname`, `message`) VALUES ('$name', '$surname', '$message')");
  
  if(!$insert)
  {
