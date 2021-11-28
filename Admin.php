@@ -35,7 +35,26 @@
         <main>
             <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
         <div class="content">
+            <article>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quo labore explicabo, velit voluptates alias adipisci asperiores mollitia veniam sequi eius delectus numquam dolorum perspiciatis fugiat recusandae tempora ea consectetur.</p>
+<?php
+    include "db_connection.php";
+
+    $sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
+    $result = mysqli_query($db, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo "id: " . $row["id"]. "<br>" . "Imię: " . $row["name"]. "<br>" . "Nazwisko: " . $row["surname"]. "<br>" . "Tekst: " .  $row["message"] . " " . "<br>" . "<br>";
+    }
+    } else {
+        echo "Nie ma wyników";
+    }
+
+    mysqli_close($db);
+?> 
+            </article>
             <div class="images">
                 <img src="Tratwa DzikoTratwaDziko.svg" alt="">
             </div>
