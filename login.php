@@ -16,7 +16,7 @@ $count = mysqli_num_rows($result);
 
 if($count == 1)
 {
-    echo "Udane Logowanie";
+    echo "Udane Logowanie" . "<br>" . "<br>";
 
     $sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
     $result = mysqli_query($db, $sql);
