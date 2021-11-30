@@ -7,7 +7,7 @@ $name = $_POST['name'];
 $surname = $_POST['surname'];
 $message = $_POST['message'];
 
-$insert = mysqli_querry($db, "INSERT INTO `kontakt`(`name`, `surname`, `message`) VALUES ('$name', '$surname', '$message')");
+$insert = mysqli_query($db, "INSERT INTO `kontakt`(`name`, `surname`, `message`) VALUES ('$name', '$surname', '$message')");
 
 if(!$insert)
 {
