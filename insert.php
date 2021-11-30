@@ -20,3 +20,4 @@ echo "Twoja wiadomość została wysłana";
 mysqli_close($db);
 }
 ?>
+<!--aaa-->
