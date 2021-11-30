@@ -36,48 +36,13 @@
             <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
         <div class="content">
             <article>
-<?php
-include "db_connection.php";
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-
-$username = stripcslashes($username);
-$password = stripcslashes($password);
-$username = mysqli_real_escape_string($db, $username);
-$password = mysqli_real_escape_string($db, $password);
-
-$sql = "SELECT * FROM accounts where username = '$username' and password = '$password' ";
-$result = mysqli_query($db, $sql);
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-$count = mysqli_num_rows($result);
-
-if($count == 1)
-{
-    echo "Udane Logowanie";
-}
-    else{
-    echo "Błędny login lub hasło";
-}
-mysqli_close($db);
-?>
-<?php
-    include "db_connection.php";
-
-    $sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
-    $result = mysqli_query($db, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["id"]. "<br>" . "Imię: " . $row["name"]. "<br>" . "Nazwisko: " . $row["surname"]. "<br>" . "Tekst: " .  $row["message"] . " " . "<br>" . "<br>";
-    }
-    } else {
-        echo "Nie ma wyników";
-    }
-
-    mysqli_close($db);
-?> 
+            <form action="login.php" method="post" class="contact">
+        <label for="login">Nazwa Użytkownika</label>
+        <input type="text" id="login" name="username" placeholder="">
+        <label for="password">Hasło</label>
+        <input type="password" name="password" id="password" placeholder="">
+        <button class="btn btn-outline-success" type="submit">Zaloguj się</button>
+    </form>
             </article>
             <div class="images">
                 <img src="Tratwa DzikoTratwaDziko.svg" alt="">
