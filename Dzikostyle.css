@@ -16,10 +16,10 @@ header{
     display: flex;
     justify-content: left;
     background-color: black;
-    padding-left: 2.5vw;
-    padding-right: 2.5vw;
-    padding-bottom: 2.5vh;
-    padding-top: 2.5vh;
+}
+.mainlogo{
+    width: 15vw;
+    height: 15vw;
 }
 nav ul{
     display: flex;
