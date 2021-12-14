@@ -29,7 +29,7 @@
             <p>
 <?php
 include "db_connection.php";
-
+if (isset($_POST['username'], $_POST['password'])){
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -62,7 +62,11 @@ if($count == 1)
     else{
     echo "Błędny login lub hasło";
 }
-mysqli_close($db);
+}
+
+else{
+    echo "Sesja wygasła";
+}
 ?> 
 </p>
             </article>
