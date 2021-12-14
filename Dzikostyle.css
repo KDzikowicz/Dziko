@@ -12,14 +12,14 @@ body{
     width: 15vw;
     height: 100vh;
 }
+.headernav img{
+    width: 15vw;
+    height: 15vh;
+}
 header{
     display: flex;
     justify-content: left;
     background-color: black;
-}
-.mainlogo{
-    width: 15vw;
-    height: 15vw;
 }
 nav ul{
     display: flex;
