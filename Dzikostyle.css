@@ -21,10 +21,6 @@ header{
     padding-bottom: 2.5vh;
     padding-top: 2.5vh;
 }
-.mainlogo{
-    width: 10vw;
-    height: 10vh;
-}
 nav ul{
     display: flex;
     list-style: none;
