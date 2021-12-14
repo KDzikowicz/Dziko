@@ -13,12 +13,14 @@ body{
     height: 100vh;
 }
 .headernav img{
+    display: flex;
+    justify-self: center;
     width: 15vw;
     height: 15vh;
 }
 header{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     background-color: black;
 }
 nav ul{
@@ -100,4 +102,12 @@ img{
 .contact{
     display: flex;
     flex-direction: column;
+}
+@media screen and (max-width:1000px){
+.all{
+    flex-direction: column;
+}
+.headernav{
+    width: 100vw;
+}
 }
