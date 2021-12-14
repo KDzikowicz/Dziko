@@ -1,3 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dziko-MainPage</title>
+    <link rel="stylesheet" href="Dzikostyle.css">
+</head>
+<body>
+<div class="all">
+    <div class="headernav">
+        <header>
+        <img src="Frame 2DzikoLogo.svg" alt="" class="mainlogo">
+        </header>
+    <nav>
+        <ul>
+            <div>
+                <li><a href="Dziko.html" class="button">Wyloguj</a></li>
+            </div>
+        </ul>
+    </nav>
+    </div>
+    <div>
+        <main>
+            <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
+        <div class="content">
+            <article>
+            <p>
 <?php
 include "db_connection.php";
 
@@ -35,3 +64,14 @@ if($count == 1)
 }
 mysqli_close($db);
 ?> 
+</p>
+            </article>
+            <div class="images">
+                <img src="Tratwa DzikoTratwaDziko.svg" alt="">
+            </div>
+        </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>
