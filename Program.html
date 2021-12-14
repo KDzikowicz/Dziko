@@ -11,7 +11,7 @@
 <div class="all">
     <div class="headernav">
         <header>
-        <img src="Desktop - 1Logotyp Dziko.png" alt="" class="mainlogo">
+        <img src="Frame 2DzikoLogo.svg" alt="" class="mainlogo">
         </header>
     <nav>
         <ul>
