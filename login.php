@@ -44,10 +44,10 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
 if($count == 1){
-    $_SESSION["name"] = $username;
+    $_SESSION["username"] = $username;
     echo "Udane Logowanie" . "<br>" . "<br>";
 }
-if(isset($_SESSION["name"])){
+if(isset($_SESSION["username"])){
 $sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
 $result = mysqli_query($db, $sql);
 
@@ -58,15 +58,15 @@ while($row = mysqli_fetch_assoc($result)) {
 }
 } else {
     echo "Nie ma wyników";
-}
+    }
 }
 else{
 echo "Błędny login lub hasło";
-}
+    }
 }
 else{
     echo "Sesja wygasła";
-}
+    }
 ?> 
 </p>
             </article>
