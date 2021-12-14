@@ -16,7 +16,7 @@
     <nav>
         <ul>
             <div>
-                <li><a href="Dziko.html" class="button">Wyloguj</a></li>
+                <li><a href="logout.php" class="button">Wyloguj</a></li>
             </div>
         </ul>
     </nav>
@@ -43,27 +43,27 @@ $result = mysqli_query($db, $sql);
 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
-if($count == 1)
-{
+if($count == 1){
+    $_SESSION["name"] = $username;
     echo "Udane Logowanie" . "<br>" . "<br>";
-
-    $sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
-    $result = mysqli_query($db, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo "id: " . $row["id"]. "<br>" . "Imię: " . $row["name"]. "<br>" . "Nazwisko: " . $row["surname"]. "<br>" . "Tekst: " .  $row["message"] . " " . "<br>" . "<br>";
-    }
-    } else {
-        echo "Nie ma wyników";
-    }
 }
-    else{
-    echo "Błędny login lub hasło";
+if(isset($_SESSION["name"])){
+$sql = "SELECT `id`, `name`, `surname`, `message` FROM kontakt";
+$result = mysqli_query($db, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+// output data of each row
+while($row = mysqli_fetch_assoc($result)) {
+    echo "id: " . $row["id"]. "<br>" . "Imię: " . $row["name"]. "<br>" . "Nazwisko: " . $row["surname"]. "<br>" . "Tekst: " .  $row["message"] . " " . "<br>" . "<br>";
+}
+} else {
+    echo "Nie ma wyników";
 }
 }
-
+else{
+echo "Błędny login lub hasło";
+}
+}
 else{
     echo "Sesja wygasła";
 }
