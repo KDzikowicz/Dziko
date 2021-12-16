@@ -4,6 +4,7 @@ body{
     margin:0;
 }
 .all{
+    width: 100vw;
     display: flex;
     flex-direction: row;
 }
@@ -31,7 +32,7 @@ nav ul{
     flex-direction: column;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-    height: 75vh;
+    height: 85vh;
     justify-content: space-between;
     text-align: center;
 }
@@ -103,6 +104,9 @@ img{
 .contact{
     display: flex;
     flex-direction: column;
+}
+.mainarticle{
+    width: 85vw;
 }
 @media screen and (max-width:1000px){
 .all{
