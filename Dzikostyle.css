@@ -1,10 +1,11 @@
 body{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     margin:0;
+    padding:0;
 }
 .all{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
@@ -32,7 +33,7 @@ nav ul{
     flex-direction: column;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
-    height: 85vh;
+    height: 75vh;
     justify-content: space-between;
     text-align: center;
 }
@@ -60,7 +61,7 @@ main{
     flex-direction: column;
     background-color: rgba(73, 74, 53, 1);
     height: 100vh;
-    width: 84.8vw;
+    width: 84vw;
     padding-left: 0.2vw;
 }
 main h1{
@@ -71,7 +72,7 @@ main h1{
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: white;
-    width: 80.8vw;
+    width: 80vw;
     display: flex;
     padding-left:2vw;
     padding-right: 2vw;
@@ -80,7 +81,7 @@ main h1{
     display: flex;
     flex-direction: row;
     height: 85vh;
-    width: 84.8vw;
+    width: 84vw;
 }
 .content article{
     margin: 0;
@@ -106,13 +107,10 @@ img{
     flex-direction: column;
 }
 .mainarticle{
-    width: 85vw;
+    width: 84.2vw;
 }
 @media screen and (max-width:1000px){
 .all{
     flex-direction: column;
-}
-.headernav{
-    width: 100vw;
 }
 }
