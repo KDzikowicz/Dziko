@@ -23,7 +23,7 @@
     </div>
     <div>
         <main>
-            <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
+            <h1>Panel Administratora</h1>
         <div class="content">
             <article>
             <p>

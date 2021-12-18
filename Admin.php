@@ -13,27 +13,28 @@
         <header>
         <img src="Frame 2DzikoLogo.svg" alt="" class="mainlogo">
         </header>
-    <nav>
+        <nav>
         <ul>
-            <div>
+        <div class="media">
+            <div class="media">
                 <li><a href="Dziko.html" class="button">Strona Główna</a></li>
                 <li><a href="O_Nas.html" class="button">O Nas</a></li>
             </div>
-            <div>
-                <li><a>Wyjazdy</a></li>
+            <div class="media">
                 <li><a href="Program.html" class="button">Program</a></li>
                 <li><a href="Wymagania.html" class="button">Wymagania</a></li>
                 <li><a href="Kontakt.html" class="button">Kontakt</a></li>
             </div>
-            <div  class="navbottom">
+            <div class="media">
                 <li><a href="Admin.php" class="button">Zaloguj</a></li>
             </div>
+        </div>
         </ul>
     </nav>
     </div>
     <div>
         <main>
-            <h1>Dziko - szkółka ze sprzętem survivalowym</h1>
+            <h1>Zaloguj się</h1>
         <div class="content">
             <article>
             <form action="login.php" method="post" class="contact">
