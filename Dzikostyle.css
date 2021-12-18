@@ -37,6 +37,10 @@ nav ul{
     justify-content: space-between;
     text-align: center;
 }
+nav ul li{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 nav ul li a{
     text-decoration: none;
     color: black;
@@ -110,7 +114,57 @@ img{
     width: 84.2vw;
 }
 @media screen and (max-width:1000px){
+body{
+    height:130vh;
+}
 .all{
     flex-direction: column;
+}
+.headernav{
+    width: 100vw;
+    height: 30vh;
+}
+.headernav img{
+    height: 20vh;
+}
+nav ul{
+    height: 10vh;
+}
+.media{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 2vw;
+}
+nav ul li a{
+    font-size: 75%;
+    height: 3vh;
+    width: 10vw;
+}
+main{
+    padding: 0;
+    width: 100vw;
+}
+main h1{
+    font-size: 150%;
+    width: 96vw;
+    margin-bottom: 1vh;
+}
+.content{
+    width: 100vw;
+}
+.content article{
+    width: 60vw;
+}
+.mainarticle{
+    width: 100vw;
+}
+}
+@media screen and (max-width:500px){
+nav ul li a{
+    font-size: 50%;
 }
 }
